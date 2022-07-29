@@ -1,0 +1,426 @@
+$white: #fff;
+$white-90: rgba(255, 255, 255, 0.9);
+$white-80: rgba(255, 255, 255, 0.8);
+$white-70: rgba(255, 255, 255, 0.7);
+$white-032: rgba(255, 255, 255, 0.32);
+$white-016: rgba(255, 255, 255, 0.16);
+$white-010: rgba(255, 255, 255, 0.10);
+$white-008: rgba(255, 255, 255, 0.08);
+$white-004: rgba(255, 255, 255, 0.04);
+
+$black: #191D1F;
+$black-90: rgba(25, 29, 31, 0.9);
+$black-80: rgba(25, 29, 31, 0.8);
+$black-70: rgba(25, 29, 31, 0.7);
+$black-50: rgba(25, 29, 31, 0.5);
+$black-032: rgba(25, 29, 31, 0.32);
+$black-016: rgba(25, 29, 31, 0.16);
+$black-008: rgba(25, 29, 31, 0.08);
+$black-004: rgba(25, 29, 31, 0.04);
+$black-002: rgba(25, 29, 31, 0.02);
+
+$black-secondary: #1A1D1F;
+$black-secondary-90: rgba(26, 29, 31, 0.9);
+$black-secondary-80: rgba(26, 29, 31, 0.8);
+$black-secondary-70: rgba(26, 29, 31, 0.7);
+$black-secondary-60: rgba(26, 29, 31, 0.6);
+$black-secondary-032: rgba(26, 29, 31, 0.32);
+$black-secondary-016: rgba(26, 29, 31, 0.16);
+$black-secondary-008: rgba(26, 29, 31, 0.08);
+$black-secondary-004: rgba(26, 29, 31, 0.04);
+
+$primary: #EA4C38;
+$primary-90: rgba(234, 76, 56, 0.9);
+$primary-80: rgba(234, 76, 56, 0.8);
+$primary-70: rgba(234, 76, 56, 0.7);
+$primary-032: rgba(234, 76, 56, 0.32);
+$primary-016: rgba(234, 76, 56, 0.16);
+$primary-008: rgba(234, 76, 56, 0.08);
+$primary-004: rgba(234, 76, 56, 0.04);
+
+$secondary: rgb(5, 101, 150);
+$secondary-90: rgba(5, 101, 150, 0.9);
+$secondary-80: rgba(5, 101, 150, 0.8);
+$secondary-70: rgba(5, 101, 150, 0.7);
+$secondary-032: rgba(5, 101, 150, 0.32);
+$secondary-016: rgba(5, 101, 150, 0.16);
+$secondary-008: rgba(5, 101, 150, 0.08);
+$secondary-004: rgba(5, 101, 150, 0.04);
+
+$success: rgb(5, 150, 97);
+$success-90: rgba(5, 150, 97, 0.9);
+$success-80: rgba(5, 150, 97, 0.8);
+$success-70: rgba(5, 150, 97, 0.7);
+$success-032: rgba(5, 150, 97, 0.32);
+$success-016: rgba(5, 150, 97, 0.16);
+$success-008: rgba(5, 150, 97, 0.08);
+$success-004: rgba(5, 150, 97, 0.04);
+
+$warning: rgb(245, 160, 24);
+$warning-90: rgba(245, 160, 24, 0.9);
+$warning-80: rgba(245, 160, 24, 0.8);
+$warning-70: rgba(245, 160, 24, 0.7);
+$warning-032: rgba(245, 160, 24, 0.32);
+$warning-016: rgba(245, 160, 24, 0.16);
+$warning-008: rgba(245, 160, 24, 0.08);
+$warning-004: rgba(245, 160, 24, 0.04);
+
+$error: rgb(230, 41, 51);
+$error-90: rgba(230, 41, 51, 0.9);
+$error-80: rgba(230, 41, 51, 0.8);
+$error-70: rgba(230, 41, 51, 0.7);
+$error-032: rgba(230, 41, 51, 0.32);
+$error-016: rgba(230, 41, 51, 0.16);
+$error-008: rgba(230, 41, 51, 0.08);
+$error-004: rgba(230, 41, 51, 0.04);
+
+$grey: #F2F4F5;
+$grey-2: #F7F7F7;
+$grey-3: rgba(22, 27, 31, 0.04);
+$grey-4: #F6F6F6;
+$grey-5: #AFB0B1;
+$grey-6: rgba(22, 28, 31, 0.08);
+
+$input-height: 60px;
+
+@mixin typo-h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 9.6rem;
+  letter-spacing: -0.015em;
+}
+
+@mixin typo-h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6rem;
+  letter-spacing: 0.005em;
+}
+
+@mixin typo-h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4.8rem;
+}
+
+@mixin typo-h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.4rem;
+  letter-spacing: 0.0025em;
+}
+
+@mixin typo-h5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+@mixin typo-h6 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0.0015em;
+}
+
+@mixin typo-h6-s {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 0.0015em;
+}
+
+@mixin typo-h6-s-normal {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  letter-spacing: 0.0015em;
+}
+
+@mixin typo-subtitle-1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+@mixin typo-subtitle-2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+@mixin typo-body-1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+@mixin typo-body-1-5 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+@mixin typo-body-2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+@mixin typo-button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+@mixin typo-caption-1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+@mixin typo-caption-1-s {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+@mixin typo-caption-2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+@mixin flex($gap) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+
+h1 {
+  @include typo-h1;
+}
+
+h2 {
+  @include typo-h2;
+}
+
+h3 {
+  @include typo-h3;
+}
+
+h4 {
+  @include typo-h4;
+}
+
+h5 {
+  @include typo-h5;
+}
+
+h6 {
+  @include typo-h6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &.white {
+    color: $white;
+  }
+}
+
+button {
+  @include typo-button;
+}
+
+// ==========================================
+p {
+  color: $black-secondary;
+
+  &.case-on {
+    font-feature-settings: 'case' on;
+  }
+
+  &.align-center {
+    text-align: center;
+  }
+
+  &.orange {
+    color: $primary;
+  }
+
+  &.white {
+    color: $white;
+  }
+
+  &.blue {
+    color: $secondary;
+  }
+
+  &.primary {
+    color: $primary;
+  }
+
+  &.success {
+    color: $success;
+  }
+
+  &.opa-06 {
+    opacity: 0.6;
+  }
+
+  &.opa-07 {
+    opacity: 0.7;
+  }
+
+  &.block-header-caps-20 {
+    // 20 px
+    @include typo-h6;
+    font-family: LinotypeHelveticaNeueLTGEOBold, LinotypeHelveticaNeueLTGEOBoldSvan, serif;
+    font-feature-settings: 'case' on;
+  }
+
+  &.block-header-caps-18 {
+    // 18 px
+    @include typo-h6-s;
+    font-family: LinotypeHelveticaNeueLTGEOBold, LinotypeHelveticaNeueLTGEOBoldSvan, serif;
+    font-feature-settings: 'case' on;
+  }
+
+  &.block-header-caps-18-normal {
+    // 18 px weight normal
+    @include typo-h6-s-normal;
+    font-family: LinotypeHelveticaNeueLTGEORoman, LinotypeHelveticaNeueLTGEORomanSvan, serif;
+    font-feature-settings: 'case' on;
+  }
+
+  &.block-header-caps-16 {
+    // 16 px
+    @include typo-subtitle-1;
+    font-family: LinotypeHelveticaNeueLTGEOBold, LinotypeHelveticaNeueLTGEOBoldSvan, serif;
+    font-feature-settings: 'case' on;
+  }
+
+  &.block-header-caps-16-normal {
+    // 16 px
+    @include typo-body-1;;
+    font-family: LinotypeHelveticaNeueLTGEORoman, LinotypeHelveticaNeueLTGEORomanSvan, serif;
+    font-feature-settings: 'case' on;
+  }
+
+  &.block-header-caps-14 {
+    // 14 px
+    @include typo-subtitle-2;
+    font-family: LinotypeHelveticaNeueLTGEOBold, LinotypeHelveticaNeueLTGEOBoldSvan, serif;
+    font-feature-settings: 'case' on;
+  }
+
+  &.block-header-caps-12 {
+    // 12 px
+    @include typo-caption-1;
+    font-family: LinotypeHelveticaNeueLTGEOBold, LinotypeHelveticaNeueLTGEOBoldSvan, serif;
+    font-feature-settings: 'case' on;
+  }
+
+  &.paragraph-22 {
+    // 22 px
+    @include typo-h5;
+    font-family: LinotypeHelveticaNeueLTGEORoman, LinotypeHelveticaNeueLTGEORomanSvan, serif;
+  }
+
+  &.paragraph-24 {
+    // 22 px
+    @include typo-h5;
+    font-family: LinotypeHelveticaNeueLTGEORoman, LinotypeHelveticaNeueLTGEORomanSvan, serif;
+  }
+
+  &.paragraph-20 {
+    // 20 px
+    @include typo-h6;
+    font-family: LinotypeHelveticaNeueLTGEORoman, LinotypeHelveticaNeueLTGEORomanSvan, serif;
+
+    &.bold {
+      font-weight: 700;
+    }
+  }
+
+  &.paragraph-18 {
+    // 18 px
+    @include typo-h6-s;
+    font-family: LinotypeHelveticaNeueLTGEORoman, LinotypeHelveticaNeueLTGEORomanSvan, serif;
+  }
+
+  &.paragraph-16 {
+    // 16 px
+    @include typo-body-1;
+    font-family: LinotypeHelveticaNeueLTGEORoman, LinotypeHelveticaNeueLTGEORomanSvan, serif;
+  }
+
+  &.paragraph-16-bold {
+    // 16 px
+    @include typo-body-1;
+    font-family: LinotypeHelveticaNeueLTGEOBold, LinotypeHelveticaNeueLTGEOBoldSvan, serif;
+  }
+
+  &.paragraph-15 {
+    // 15 px
+    @include typo-body-1-5;
+    font-family: LinotypeHelveticaNeueLTGEORoman, LinotypeHelveticaNeueLTGEORomanSvan, serif;
+  }
+
+  &.paragraph-14 {
+    // 14 px
+    @include typo-body-2;
+    font-family: LinotypeHelveticaNeueLTGEORoman, LinotypeHelveticaNeueLTGEORomanSvan, serif;
+
+    &.bold {
+      font-family: LinotypeHelveticaNeueLTGEOBold, LinotypeHelveticaNeueLTGEOBoldSvan, serif;
+    }
+  }
+
+  &.paragraph-12 {
+    // 12 px
+    @include typo-caption-1;
+    font-family: LinotypeHelveticaNeueLTGEORoman, LinotypeHelveticaNeueLTGEORomanSvan, serif;
+  }
+
+  &.paragraph-11 {
+    // 11 px
+    @include typo-caption-1-s;
+    font-family: LinotypeHelveticaNeueLTGEORoman, LinotypeHelveticaNeueLTGEORomanSvan, serif;
+  }
+
+  &.paragraph-10 {
+    // 10 px
+    @include typo-caption-2;
+    font-family: LinotypeHelveticaNeueLTGEORoman, LinotypeHelveticaNeueLTGEORomanSvan, serif;
+  }
+}
+
+@mixin custom-scrollbar {
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 0;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $black-016;
+    border-radius: 4px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $primary;
+  }
+}

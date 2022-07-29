@@ -1,0 +1,18 @@
+<section
+  class="notification-container"
+  *ngIf="message"
+  [ngClass]="message.type"
+>
+  <div class="wrapper">
+    <div class="wrapper">
+      <div class="icon white-010" [ngClass]="message.icon"></div>
+
+      <p class="message paragraph-16 white">{{ message.translate ? (message?.message.toUpperCase() | translate) : ( message?.message) }}</p>
+    </div>
+
+    <div
+      class="icon white-010 close pointer"
+      (click)="closeNotification()"
+    ></div>
+  </div>
+</section>

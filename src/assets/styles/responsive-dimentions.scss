@@ -1,0 +1,187 @@
+@import "./../../assets/styles/variables.scss";
+
+//#region [rgba(3, 120, 3, 0.1)] responsive sizes
+$r-w-l: 1296px; //responsive-width-large
+$m-m-s: 1024px; //mobile max size
+$t-m-s: 767px; //tablet min size
+
+$header-height: 96px;
+$footer-height: 120px;
+
+$spacer: 24px;
+
+$home-header-height: 80px;
+$home-header-height-mobile: 60px;
+
+$card-width: 217px;
+$card-width-mob: 192px;
+// #endregion
+
+@media screen and (min-width: $r-w-l) {
+  .responsive-wrapper {
+    width: $r-w-l;
+  }
+}
+
+@media screen and (max-width: $r-w-l + 15) and (min-width: $m-m-s) {
+  .responsive-wrapper {
+    width: 100% !important;
+    max-width: $r-w-l;
+    padding: 0 $spacer;
+  }
+  .full-page {
+    padding: $home-header-height $spacer $home-header-height-mobile;
+  }
+}
+
+@media screen and (max-width: $m-m-s) {
+
+  .responsive-wrapper {
+    width: 100%;
+  }
+
+  html {
+    font-size: 8px !important;
+  }
+
+  .rectangular-btn-with-text {
+    button {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  .full-page {
+    padding: 0 0 $home-header-height-mobile;
+
+    &.home {
+      min-height: 100vh;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      & > .wrapper {
+        header {
+          position: fixed;
+          z-index: 101;
+          bottom: 0;
+          top: auto;
+        }
+      }
+    }
+  }
+
+  .product-block {
+    .header {
+      p:nth-child(2) {
+        font-size: 20px !important;
+      }
+    }
+
+    &.accounts-and-cards,
+    &.deposits,
+    &.loans,
+    &.credit-cards {
+      .header {
+        padding: $spacer;
+        background-size: contain;
+      }
+    }
+
+    .products {
+      max-height: 330px;
+      padding: $spacer;
+
+      .product {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .product-details-page {
+    .header {
+      padding-left: $spacer;
+    }
+
+    & > .wrapper {
+
+      &.main {
+        &.main {
+          flex-direction: column;
+        }
+      }
+
+      .left-side {
+        width: 100%;
+
+        .brief-info {
+          padding: $spacer;
+
+          .product-image {
+            height: 184px;
+            padding: $spacer;
+          }
+        }
+
+        .navigation {
+          margin: $spacer / 2 0;
+        }
+      }
+
+      .right-side {
+        width: 100%;
+
+        .collapsable-block {
+          .header {
+            padding: $spacer;
+          }
+
+          .collapsed-content {
+            padding: $spacer;
+
+            .wrapper {
+              align-items: center;
+
+              .button-container {
+                width: 40px;
+                margin-left: 8px;
+
+                &.unused {
+                  display: none;
+                }
+              }
+
+              &:first-of-type {
+                .main-page {
+                  display: none;
+                }
+              }
+
+              p {
+                min-width: 60px;
+              }
+
+              p.block-header-caps-16 {
+                //text-align: right;
+              }
+
+              &.full-width {
+                width: 100%;
+                justify-content: space-between;
+              }
+            }
+          }
+        }
+
+        > .collapsable-block:first-child {
+          margin-top: 0;
+
+          & > p {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
